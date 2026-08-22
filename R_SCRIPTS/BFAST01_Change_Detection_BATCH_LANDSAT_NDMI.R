@@ -28,7 +28,7 @@ A = read.csv(i, header=T)
 ## Data Preparation
 
 # Subset Input Dataset
-dat <- as.matrix(A[,c(2,3,6)])
+dat <- as.matrix(A[,c(2,3,7)])
 
 # Create Regular Time Series Dataset with NA
 ts_reg <- bfastts(data=dat, dates=dat[,2], type="irregular")
